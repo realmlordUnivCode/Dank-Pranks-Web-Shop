@@ -573,7 +573,7 @@ $event_array = require_once('eventarray.php');
 if($config['log_type'] === 1){
     $config['db'] = new PDO("mysql:host={$config['db_host']};dbname={$config['db_name']}", $config['db_user'], $config['db_pass']);
 }
-\Stripe\Stripe::setApiKey($config['sk_live_T85G1mvOBRy4DvwObju6UiAX']);
+\Stripe\Stripe::setApiKey($config['pk_live_p0G2MIGn9e28zRMj5qVy5JAh']);
 /*
  *  Validate the event(ensure it is coming from stripe, and not a third party event.)
  */
@@ -628,7 +628,7 @@ return [
     /*
      * Stripe Secret API Key,
      */
-    'api_key' => 'sk_live_T85G1mvOBRy4DvwObju6UiAX',
+    'api_key' => 'pk_live_p0G2MIGn9e28zRMj5qVy5JAh',
     /*
      * Path to stripe lib
      */
@@ -708,7 +708,7 @@ return [
 <?php <form action="your-server-side-code" method="POST">
   <script
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="sk_live_T85G1mvOBRy4DvwObju6UiAX
+    data-key="pk_live_p0G2MIGn9e28zRMj5qVy5JAh
 "
     data-amount="500"
     data-name="Dank Pranks"
