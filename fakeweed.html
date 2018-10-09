@@ -573,7 +573,7 @@ $event_array = require_once('eventarray.php');
 if($config['log_type'] === 1){
     $config['db'] = new PDO("mysql:host={$config['db_host']};dbname={$config['db_name']}", $config['db_user'], $config['db_pass']);
 }
-\Stripe\Stripe::setApiKey($config['api_key']);
+\Stripe\Stripe::setApiKey($config['sk_live_T85G1mvOBRy4DvwObju6UiAX']);
 /*
  *  Validate the event(ensure it is coming from stripe, and not a third party event.)
  */
@@ -708,10 +708,11 @@ return [
 <?php <form action="your-server-side-code" method="POST">
   <script
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="pk_test_qb5Tk0OGmBdxypeicfMMFtFU"
-    data-amount="999"
-    data-name="Demo Site"
-    data-description="Widget"
+    data-key="sk_live_T85G1mvOBRy4DvwObju6UiAX
+"
+    data-amount="500"
+    data-name="Dank Pranks"
+    data-description="Fake weed"
     data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
     data-locale="auto">
   </script>
